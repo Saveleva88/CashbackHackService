@@ -1,11 +1,12 @@
 package ru.netology.service;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class CashbackHackServiceTest {
+public class CashbackHackApiJunitJupiterTest {
     CashbackHackService cashbackHackService = new CashbackHackService();
+
     @Test
     public void shouldCalculateHowMuchBuy() {
         int actual = cashbackHackService.remain(300);
@@ -38,5 +39,4 @@ public class CashbackHackServiceTest {
         int expected = 256;
         assertEquals(expected,actual);
     }
-
 }
